@@ -14,7 +14,7 @@ os.makedirs(folder,exist_ok=True)
 folder = folder / str(basedtime.month)
 os.makedirs(folder,exist_ok=True)
 today = folder / f"{basedtime}.csv"
-dfs[0].to_csv(today)
+dfs[1].to_csv(today)
 
 
 

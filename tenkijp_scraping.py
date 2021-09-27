@@ -7,6 +7,7 @@ import pandas as pd
 
 URL = 'https://tenki.jp/forecast/4/20/5610/17210/1hour.html'
 dfs = pd.read_html(URL,encoding = "UTF-8",header=0,index_col=0)
+dfs = dfs.T
 
 basedtime = datetime.date.today()
 folder = Path(__file__).parent / "tenkijp_hakusan" / str(basedtime.year)
